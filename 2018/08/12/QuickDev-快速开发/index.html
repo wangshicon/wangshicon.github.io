@@ -31,7 +31,7 @@
     <!--Title-->
 
 
-<title>Hello Test | Lord丶轩莫言弃的个人博客</title>
+<title>QuickDev(快速开发) | Lord丶轩莫言弃的个人博客</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Lord丶轩莫言弃的个人博客" type="application/atom+xml">
@@ -136,9 +136,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Hello Test">
+        <h1 id="QuickDev(快速开发)">
             
-	            Hello Test
+	            QuickDev(快速开发)
             
         </h1>
         <div class="post-meta">
@@ -146,8 +146,8 @@
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/前端">
-            前端
+        <a href="/categories/后端">
+            后端
         </a>
     </span>
     
@@ -157,8 +157,8 @@
         <span class="tags-meta">
             
                 
-                    <a href="/tags/测试" title='测试'>
-                        测试
+                    <a href="/tags/开发环境" title='开发环境'>
+                        开发环境
                     </a>
                 
             
@@ -170,7 +170,7 @@
         
         <span class="fa-wrap">
             <i class="fa fa-clock-o"></i>
-            <span class="date-meta">2018/08/07</span>
+            <span class="date-meta">2018/08/12</span>
         </span>
     
 </div>
@@ -180,15 +180,89 @@
     </div>
     
     <div class="post-body post-content">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 文章内容测试. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p><img src="https://images.gitee.com/uploads/images/2018/0811/192146_e18351af_1235100.png" alt="Lord" title="lord_100_100.png"><br>QuickDev是一个集成Java web后端开发环境的工具包，目标是帮助Java后端开发人员，快速搭建开发环境，节约开发环境创建时间，快速进入开发状态。</p>
+<h2 id="集成软件"><a href="#集成软件" class="headerlink" title="集成软件"></a>集成软件</h2><pre><code>1. JDK &quot;1.8.0_131&quot;
+2. Apache Maven 3.3.3
+3. Git version 2.18.0.windows.1
+4. IntelliJ IDEA 2018.2 (Ultimate Edition)
+5. MariaDB 10.3.8
+6. Tomcat 7.0
+7. Tomcat 8.0
+</code></pre><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><pre><code>D:.                       // 盘符
+├─dev                    // 主目录
+│  ├─bin                // 脚本及其他
+│  ├─opt               // 软件环境
+│  │  ├─Git
+│  │  ├─Java
+│  │  ├─JetBrains
+│  │  ├─mariaDB
+│  │  ├─Maven
+│  │  ├─Tomcat7.0
+│  │  └─Tomcat8.5
+│  └─var             // 工作空间
+│      ├─git
+│      ├─m2
+│      │  └─repo
+│      ├─workspace_idea
+</code></pre><h2 id="详细说明"><a href="#详细说明" class="headerlink" title="详细说明"></a>详细说明</h2><pre><code>1. Maven 仓库默认配置到阿里云的仓库
+2. Maven 仓库位置默认位置为 var/m2/repo
+3. mariaDB 默认用户名密码为 root/root
+4. Tomcat7.0和Tomcat8.5
+5. bin目录存在两个reg文件，主要作用是将管理员打开命令行加入右键菜单
+   cmd.reg 注册服务到注册表
+   rmcmd.reg 从注册表移除
+</code></pre><h2 id="IntelliJ-IDEA-2018-2-说明"><a href="#IntelliJ-IDEA-2018-2-说明" class="headerlink" title="IntelliJ IDEA 2018.2 说明"></a>IntelliJ IDEA 2018.2 说明</h2><p>IntelliJ IDEA 2018.2 (Ultimate Edition) 旗舰版，注册日期到2019-05-05</p>
+<ol>
+<li>默认配置文件路径已修改至安装目录D:\dev\opt\JetBrains\IntelliJ IDEA 2018.2.IntelliJIdea</li>
+<li>如果出现激活失败，请按照如下方法激活：<h3 id="软件注册"><a href="#软件注册" class="headerlink" title="软件注册"></a>软件注册</h3><ol>
+<li>修改hosts文件，win10系统，路径如下：<br> C:\Windows\System32\drivers\etc\hosts<br> 在文件中添加解析地址，内容如下：<br> 0.0.0.0        account.jetbrains.com</li>
+<li>填写激活码，激活码文件在D:\dev\opt\JetBrains下的IntelliJ IDEA CODE.txt,将内容全部复制，然后打开IDEA,粘贴到激活码输入框即可。</li>
+</ol>
+</li>
+</ol>
+<h3 id="关闭的插件"><a href="#关闭的插件" class="headerlink" title="关闭的插件"></a>关闭的插件</h3><pre><code>1. Android Support
+2. dmServer Support
+3. DSM Analysis
+4. Geronimo Integration
+5. GlassFish Integration
+6. Google App Engine Integration
+7. Grails
+8. GWT Support
+9. JBoss Seam 相关3个插件
+10. JSR45 Integration
+11. Mercurial Integration
+12. Osmorc
+13. Perforce Integration
+14. Remote Hosts Access
+15. Resin Integration
+16. SSH Remote Run
+17. Tapestry support
+18. TFS Integration
+19. UI Designer
+20. Vaadin Support
+21. WebSphere Integration
+</code></pre><h3 id="新增插件"><a href="#新增插件" class="headerlink" title="新增插件"></a>新增插件</h3><pre><code>1. .ignore Git提交忽略
+2. Alibaba Java Coding Guidelines 阿里巴巴代码规范检查
+3. Background Image Plus 背景图片（装X利器）
+4. Eclipse Code Formatter 代码格式化插件
+5. Free MyBatis plugin MyBtis相关插件
+6. Gitee 码云
+7. GsonFormat json转换成实体对象
+8. Key promoter 快捷键提示
+9. Lombok Plugin  这个不用多说了吧
+10. Maven Helper  Maven必须要用的吧
+11. Save Actions   自行研究
+12. Translation  英文不好小伙伴的福音
+...余下，亲自试试会更有趣！！！
+</code></pre><h2 id="关于代码格式化"><a href="#关于代码格式化" class="headerlink" title="关于代码格式化"></a>关于代码格式化</h2><ol>
+<li>默认使用Eclipse Code Formatter,已经在目录里面提供了一份格式化的模板，需要修改请自行调整，文件路径：<br>D:\dev\opt\JetBrains\IntelliJ IDEA 2018.2.IntelliJIdea\Eclipse [customer].xml</li>
+<li>保存代码自动格式化，优化导包，自动添加实现方法…默认已设置，如果失效，请检查Save Actions设置</li>
+<li>默认已做了很多方面设置，如字体类型，字体大小，代码注释等等，请按需要自行调整<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
+<li>第一步 请<a href="https://pan.baidu.com/s/1eyMAIsndqSagewkHnitvQQ" target="_blank" rel="noopener">下载</a>此压缩包，<a href="https://pan.baidu.com/s/1eyMAIsndqSagewkHnitvQQ" target="_blank" rel="noopener">百度网盘</a></li>
+<li>第二步   解压到D盘根目录并配置环境变量<br>环境变量配置文件，已打包到压缩包中，请自行配置<h2 id="部分截图"><a href="#部分截图" class="headerlink" title="部分截图"></a>部分截图</h2><img src="https://upload-images.jianshu.io/upload_images/3875336-b42f2315dad765cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/3875336-cba3ade7f4e519af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/3875336-b35cc0eac2a04630.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="https://upload-images.jianshu.io/upload_images/3875336-bf87373dc01af10f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
+</ul>
+</li>
+</ol>
 
     </div>
 
@@ -207,11 +281,6 @@
 <div class="article-nav prev-next-wrap clearfix">
     
     
-        <a href="/2018/08/07/hello-world/" class="next-post btn btn-default" title='Hello World'>
-            <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">Hello World</span><i class="fa fa-angle-right fa-fw"></i>
-        </a>
-    
 </div>
 
 
@@ -226,8 +295,8 @@
         new Valine({
             av: AV,
             el: '#vcomments',
-            appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
-            appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+            appId: 'S0khP49EX3ra7CWHD7IN1Es3-gzGzoHsz',
+            appKey: 'sUxl4RdR0XnOX5Om3emTHOed',
             placeholder: '说点什么吧',
             notify: false,
             verify: false,
@@ -252,7 +321,7 @@
     <div class="widget">
         <h3 class="title">文章目录</h3>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集成软件"><span class="toc-text">集成软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目录结构"><span class="toc-text">目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#详细说明"><span class="toc-text">详细说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IntelliJ-IDEA-2018-2-说明"><span class="toc-text">IntelliJ IDEA 2018.2 说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#软件注册"><span class="toc-text">软件注册</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关闭的插件"><span class="toc-text">关闭的插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新增插件"><span class="toc-text">新增插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于代码格式化"><span class="toc-text">关于代码格式化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用方法"><span class="toc-text">使用方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部分截图"><span class="toc-text">部分截图</span></a></li></ol>
         
     </div>
 </aside>
